@@ -40,9 +40,7 @@
                 <el-form-item label="联系方式">
                     <el-input  v-model="form.telephone"></el-input>
                 </el-form-item>
-                <el-form-item label="顾客号">
-                    <el-input  v-model="form.customerId"></el-input>
-                </el-form-item>
+                
              </el-form>
              </span>
          <span slot="footer" class="dialog-footer">
