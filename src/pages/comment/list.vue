@@ -19,11 +19,6 @@
          <span>
            
              <el-form :model="from" label-width=80px>
-                <el-form-item label="编号">
-                    <!-- v-model双向数据绑定 -->
-                    <el-input v-model="form.id">
-                    </el-input>
-                </el-form-item>
                 <el-form-item label="评论内容">
                     <el-input v-model="form.content"></el-input>
                 </el-form-item>
