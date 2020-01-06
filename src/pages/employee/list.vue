@@ -76,7 +76,7 @@ export default {
     // 存放网页中需要调用的方法
     methods:{
         submitHandler(){
-          let url="http://localhost:6677/waiter/saveOrUpdate";
+          let url="http://134.175.154.93:6677/waiter/saveOrUpdate";
           request({
           url,
           method:"POST",
@@ -100,7 +100,7 @@ export default {
         },
         loadData(){
           let that=this
-          let url = "http://localhost:6677/waiter/findAll"
+          let url = "http://134.175.154.93:6677/waiter/findAll"
           request.get(url).then(function(response){
           //将查询结果设置到employees里
           //箭头函数中的this指向外部函数的this

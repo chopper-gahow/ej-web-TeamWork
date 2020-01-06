@@ -60,7 +60,7 @@ export default {
     // 存放网页中需要调用的方法
   methods:{
         loadData(){
-      let url="http://localhost:6677/address/findAll"
+      let url="http://134.175.154.93:6677/address/findAll"
       request.get(url).then((response)=>{
         // 将查询结果设置到customers中，this指向外部函数的this
         this.addresses = response.data;
@@ -68,7 +68,7 @@ export default {
     },
     submitHandler(){
   
-      let url = "http://localhost:6677/address/saveOrUpdate";
+      let url = "http://134.175.154.93:6677/address/saveOrUpdate";
       request({
         url,
         method:"POST",
@@ -95,7 +95,7 @@ export default {
         cancelButtonText: '取消',
         type: 'warning'
       }).then(() => {
-        let url="http://localhost:6677/address/deleteById?id="+id;
+        let url="http://134.175.154.93:6677/address/deleteById?id="+id;
         // let that=this;
         request.get(url).then((response)=>{
             this.loadData();
@@ -136,7 +136,7 @@ export default {
 
     },
     created(){
-        let url="http://localhost:6677/address/findAll"
+        let url="http://134.175.154.93:6677/address/findAll"
         // let that = this
         request.get(url).then((response)=>{
             //将查询结果设置到customers中
